@@ -1,0 +1,141 @@
+/*----- Variables -----*/
+
+:root {
+    --white: #fff;
+    --grey-1: #3b3b3b;
+    --grey-2: #243347;
+    --orange-1: #D79362;
+    --orange-2: #F1974E;
+}
+
+/*----- END Variables -----*/
+
+/*----- Basic -----*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--white);
+    background-color: var(--grey-2);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*----- END Basic -----*/
+
+/*----- General -----*/
+
+.text-center {
+    text-align: center;
+}
+
+/*----- END General -----*/
+
+
+/*----- Header -----*/
+
+.header {
+    padding: 0 8px 24px 8px;
+}
+
+.header .title {
+    color: var(--orange-2);
+}
+
+.header .description {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+/*----- END Header -----*/
+
+/*----- Main -----*/
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 8px;
+}
+
+.code-snippet {
+    flex: 0 0 100%;
+    border: 2px dashed var(--white);
+    width: 100%;
+    padding: 0 16px 16px 16px;
+    margin: 24px 0 16px 0;
+}
+
+.code-snippet .title {
+    color: var(--orange-2);
+    border: 1px solid var(--white);
+    border-radius: 8px;
+    background-color: var(--grey-2);
+    padding: 8px;
+    margin: -24px 0 16px 0;
+}
+
+.code-snippet .description {
+    color: var(--orange-2);
+}
+
+.code-snippet .code-example {
+    color: var(--grey-1);
+    border-radius: 8px;
+    background-image: linear-gradient(
+        var(--orange-1) 0%,
+        var(--orange-2) 100%
+    );
+    font-weight: bold;
+    padding: 10px;
+    margin: 0;
+    overflow-x: auto;
+}
+
+/*----- END Main -----*/
+
+/*----- Footer -----*/
+
+.footer {
+    padding: 0 8px;
+}
+
+.footer p {
+    color: var(--orange-2);
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/*----- END Footer -----*/
+
+/*----- Tablet Query -----*/
+
+@media screen and (min-width: 768px) {
+    /*----- t-Main -----*/
+
+    .code-snippet {
+        max-width: calc(50% - 16px);
+        margin-right: 8px;
+        margin-left: 8px;
+    }
+
+    /*----- END t-Main -----*/
+}
+
+/*----- END Tablet Query -----*/
+
+/*----- Desktop Query -----*/
+
+@media screen and (min-width: 992px) {
+    /*----- d-Main -----*/
+
+    .code-snippet {
+        max-width: calc(33.33% - 16px);
+    }
+
+    /*----- END t-Main -----*/
+}
+
+/*----- END Desktop Query -----*/
