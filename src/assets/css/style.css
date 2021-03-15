@@ -66,6 +66,12 @@ body {
     width: 100%;
     padding: 0 16px 16px 16px;
     margin: 24px 0 16px 0;
+    transition: box-shadow .5s ease-in-out;
+}
+
+.code-snippet:hover,
+.code-snippet:hover .title {
+    box-shadow: 0 0 10px var(--orange-1);
 }
 
 .code-snippet .title {
@@ -75,6 +81,7 @@ body {
     background-color: var(--grey-2);
     padding: 8px;
     margin: -24px 0 16px 0;
+    transition: box-shadow .5s ease-in-out;
 }
 
 .code-snippet .description {
